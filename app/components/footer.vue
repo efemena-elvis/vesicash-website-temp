@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-50 text-gray-700 py-12">
+  <footer class="bg-white text-gray-700 pt-12">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-8">
       <div class="flex flex-col space-y-4">
         <img
@@ -135,10 +135,10 @@
           <p>Stellar</p>
         </div>
       </div>
-      <hr class="my-1 border-gray-200 col-span-full" />
+      <hr class="border-gray-200 col-span-full" />
     </div>
 
-    <div class="container mx-auto text-center text-sm text-gray-500 mt-6 px-8">
+    <div class="container mx-auto text-center text-sm text-gray-500 py-6 px-8">
       <p>
         Copyright {{ new Date().getFullYear() }}. Vesicash Innovative
         Technologies.

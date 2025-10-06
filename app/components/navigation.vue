@@ -1,5 +1,12 @@
 <template>
-  <header class="bg-white">
+  <header
+    :class="[
+      '',
+      view === 'portal'
+        ? 'bg-portal border-b-2 border-[#65636340]'
+        : 'bg-linear-to-r from-white via-gray-100 to-gray-300 border-b border-[#65636340]/20',
+    ]"
+  >
     <div
       class="container grid grid-cols-[auto_1fr_auto] gap-8 items-center mx-auto py-2 px-2 md:py-4 md:px-8"
     >
@@ -10,7 +17,7 @@
         <div
           :class="[
             'p-1.5 md:p-2 text-sm md:text-base inline-flex gap-1 rounded-full',
-            view === 'payment' ? 'bg-[#EAEEF0]' : 'bg-[#EAEEF0]',
+            view === 'payment' ? 'bg-[#EAEEF0]' : 'bg-blue-400/90',
           ]"
         >
           <div
@@ -33,7 +40,8 @@
             ]"
             @click="setAppState('payment')"
           >
-            Payment <span class="hidden md:inline">suite</span>
+            <span class="inline md:hidden">Payment</span
+            ><span class="hidden md:inline">Licensed Payment Network</span>
           </div>
         </div>
       </div>
@@ -48,3 +56,11 @@ const store = useAppState();
 const { setAppState } = store;
 const view = computed(() => store.appState);
 </script>
+
+<style scoped>
+.bg-portal {
+  background-image: url("../assets/images/skye.png");
+  background-position: center;
+  background-size: cover;
+}
+</style>
