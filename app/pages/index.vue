@@ -1,12 +1,187 @@
 <template>
   <div class="pt-16">
-    <div v-if="view === 'payment'" class="animate-in slide-in-from-left-2">
+    <div v-if="view === 'portal'" class="animate-in slide-in-from-left-2">
+      <section class="bg-gray-100 py-16 relative hero-section">
+        <div
+          class="container mx-auto grid gap-10 lg:grid-cols-[1fr_1fr] items-center px-8 relative"
+        >
+          <div class="space-y-5 max-w-[400px]">
+            <h1
+              class="text-5xl md:text-7xl md:leading-[90px] font-bold text-white"
+            >
+              Africa’s Merchant of Record Gateway
+            </h1>
+            <p class="text-lg text-[#E5EDEB]/80">
+              Portal by Vesicash intelligently orchestrates local payments,
+              compliance, and tax handling across the continent, giving you
+              seamless access to every market.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
+          <div class="w-full aspect-[0.95]">
+            <img
+              src="@/assets/images/Africa.png"
+              class="w-full h-full object-contain objcet-center lg:object-right"
+              alt="illustration-of-a-dashboard"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-gradient-to-r bg-[#F1F7F6] ocrhe">
+        <div class="container px-8 grid sm:grid-cols-[1fr_1.3fr] gap-6">
+          <div></div>
+          <div class="space-y-10 sm:py-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#171918]">
+              Orchestrated Payments, Built for Africa’s Complexity
+            </h2>
+            <div class="space-y-3 text-[#525857]">
+              <p>
+                Portal by Vesicash intelligently routes payments across mobile
+                money, cards, and bank transfers in each market by using our
+                network of licensed processors and banks. We handle
+                <b>Compliance</b>, <b>Settlement</b>, and <b>Taxes</b>, so you
+                don’t have to.
+              </p>
+              <p>
+                Our smart orchestration engine automatically selects the most
+                reliable, cost-effective rail for each transaction thereby
+                maximizing uptime and optimizing your margins. That’s how we
+                turn Africa’s fragmented payment landscape into one seamless
+                API.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-white feature-sections">
+        <div class="text-center container mx-auto mb-16 px-4">
+          <h2 class="text-4xl font-bold md:text-6xl">
+            Portal by Vesicash: One API,<br />Full Coverage
+          </h2>
+          <p class="text-[#525857] mt-4 mx-auto max-w-xl text-lg">
+            Portal is Africa’s unified Merchant of Record API. We handle
+            payments, tax, and compliance so you can focus on growth.
+          </p>
+        </div>
+
+        <div
+          class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4"
+        >
+          <div
+            v-for="(feature, idx) in features"
+            :key="idx"
+            class="bg-[#F1F7F6] rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col"
+          >
+            <h3 class="text-3xl font-bold text-[#0B618F] mb-6">
+              {{ feature.title }}
+            </h3>
+            <p class="text-[#696F6E] text-base mb-6">
+              {{ feature.description }}
+            </p>
+            <img
+              :src="feature.image"
+              alt="feature icon"
+              class="w-[237.41px] h-[168.5px] mt-auto mx-auto object-contain object-bottom block"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-[#F1FAF3]">
+        <div class="container mx-auto px-8">
+          <!-- Heading -->
+          <div class="text-center mb-12 px-4">
+            <h2
+              class="text-4xl md:text-6xl font-bold text-[#171918] max-w-2xl mx-auto"
+            >
+              Trusted by Global Brands Across Africa
+            </h2>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div
+            class="max-w-5xl mx-auto bg-black rounded-full overflow-hidden p-6 _flex justify-center hidden"
+          >
+            <img
+              src="@/assets/images/globe.png"
+              alt="Africa Map Placeholder"
+              class="w-full object-cover rounded-[32px]"
+            />
+          </div>
+
+          <div
+            class="grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] [&>img]:justify-self-center gap-10 mt-16 mb-28"
+          >
+            <img src="../assets/images/yas.png" alt="yas" />
+            <img src="../assets/images/flutterwave.png" alt="flutterwave" />
+            <img src="../assets/images/m-pesa.png" alt="m-pesa" />
+            <img src="../assets/images/tico.png" alt="tigo" />
+            <img src="../assets/images/e-wallet.png" alt="e-wallet" />
+            <img src="../assets/images/visa.png" alt="visa" />
+            <img src="../assets/images/alexpay.png" alt="alexpay" />
+            <img src="../assets/images/mastercard.png" alt="mastercard" />
+            <img src="../assets/images/redstone.png" alt="redstone" />
+          </div>
+
+          <!-- Stats Section -->
+          <div
+            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-6 text-center"
+          >
+            <div>
+              <p class="text-4xl font-bold text-[#043B56]">50+</p>
+              <p class="text-[#525857] mt-2 text-lg">
+                Businesses use our platform to<br />
+                process their transactions.
+              </p>
+            </div>
+
+            <div>
+              <p class="text-4xl font-bold text-[#043B56]">7+</p>
+              <p class="text-[#525857] text-lg mt-2">
+                Markets, including Ghana, South<br />
+                Africa, Zambia and Tanzania
+              </p>
+            </div>
+
+            <div>
+              <p class="text-4xl font-bold text-[#043B56]">4+</p>
+              <p class="text-[#525857] text-lg mt-2">
+                Payment licenses secured,<br />
+                doubling by Q1 2026.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-[#011A27] text-white py-20 flex items-center justify-center"
+      >
+        <div class="container mx-auto px-8 text-center">
+          <h2
+            class="text-4xl font-bold text-white sm:text-5xl max-w-[500px] mx-auto"
+          >
+            Ready to Expand into Africa?
+          </h2>
+          <p class="mt-6 text-lg text-[#F1F7F6] max-w-[500px] mx-auto">
+            Get started with Portal by Vesicash and launch in new markets
+            quickly and compliantly.
+          </p>
+          <div class="mt-8">
+            <a href="#" class="btn"> Get started </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div v-else class="animate-in slide-in-from-left-2">
       <section class="bg-gray-100 py-16">
         <div
           class="container mx-auto grid gap-10 lg:grid-cols-[2fr_3fr] items-center px-8 relative"
         >
           <div class="space-y-5">
-            <h1 class="text-5xl md:text-6xl leading-[80px] font-bold">
+            <h1 class="text-5xl md:text-6xl md:leading-[80px] font-bold">
               Expand Faster with Local Payments across Africa
             </h1>
             <p class="text-lg text-[#525857]">
@@ -92,18 +267,18 @@
             />
           </div>
 
-          <div class="grid grid-cols-[244px_1fr] gap-10 mt-32">
+          <div class="grid md:grid-cols-[244px_1fr] gap-10 mt-32">
             <div>
               <h1 class="text-5xl font-bold text-[#171918]">Why it Matters</h1>
             </div>
             <div
-              class="grid grid-cols-[repeat(auto-fill,_minmax(264px,_1fr))] gap-8"
+              class="grid md:grid-cols-[repeat(auto-fill,_minmax(264px,_1fr))] gap-8"
             >
               <div class="space-y-4">
                 <div
                   class="size-[70px] rounded-full border border-[#E5EDEB] bg-white grid place-items-center"
                 >
-                  <icon-judge class="text-4xl" />
+                  <icon-judge class="text-4xl text-blue-400/80" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -137,7 +312,7 @@
                 <div
                   class="size-[70px] rounded-full border border-[#E5EDEB] grid place-items-center"
                 >
-                  <icon-globe class="text-4xl text-blue-700" />
+                  <icon-globe class="text-4xl text-blue-500/30" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -368,181 +543,6 @@
           </h2>
           <p class="mt-6 text-lg text-[#F1F7F6] max-w-[500px] mx-auto">
             Go live across Africa on licensed local rails.
-          </p>
-          <div class="mt-8">
-            <a href="#" class="btn"> Get started </a>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div v-else class="animate-in slide-in-from-left-2">
-      <section class="bg-gray-100 py-16 relative hero-section">
-        <div
-          class="container mx-auto grid gap-10 lg:grid-cols-[1fr_1fr] items-center px-8 relative"
-        >
-          <div class="space-y-5 max-w-[400px]">
-            <h1
-              class="text-5xl md:text-7xl leading-[90px] font-bold text-white"
-            >
-              Africa’s Merchant of Record Gateway
-            </h1>
-            <p class="text-lg text-[#E5EDEB]/80">
-              Portal by Vesicash intelligently orchestrates local payments,
-              compliance, and tax handling across the continent, giving you
-              seamless access to every market.
-            </p>
-            <button class="btn">Get Started</button>
-          </div>
-          <div class="w-full aspect-[0.95]">
-            <img
-              src="@/assets/images/Africa.png"
-              class="w-full h-full object-contain objcet-center lg:object-right"
-              alt="illustration-of-a-dashboard"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="py-16 bg-gradient-to-r bg-[#F1F7F6] ocrhe">
-        <div class="container px-18 grid sm:grid-cols-[1fr_1.3fr] gap-6">
-          <div></div>
-          <div class="space-y-10 sm:py-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-[#171918]">
-              Orchestrated Payments, Built for Africa’s Complexity
-            </h2>
-            <div class="space-y-3 text-[#525857]">
-              <p>
-                Portal by Vesicash intelligently routes payments across mobile
-                money, cards, and bank transfers in each market by using our
-                network of licensed processors and banks. We handle
-                <b>Compliance</b>, <b>Settlement</b>, and <b>Taxes</b>, so you
-                don’t have to.
-              </p>
-              <p>
-                Our smart orchestration engine automatically selects the most
-                reliable, cost-effective rail for each transaction thereby
-                maximizing uptime and optimizing your margins. That’s how we
-                turn Africa’s fragmented payment landscape into one seamless
-                API.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-16 bg-white feature-sections">
-        <div class="text-center container mx-auto mb-16 px-4">
-          <h2 class="text-4xl font-bold md:text-6xl">
-            Portal by Vesicash: One API,<br />Full Coverage
-          </h2>
-          <p class="text-[#525857] mt-4 mx-auto max-w-xl text-lg">
-            Portal is Africa’s unified Merchant of Record API. We handle
-            payments, tax, and compliance so you can focus on growth.
-          </p>
-        </div>
-
-        <div
-          class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4"
-        >
-          <div
-            v-for="(feature, idx) in features"
-            :key="idx"
-            class="bg-[#F1F7F6] rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col"
-          >
-            <h3 class="text-3xl font-bold text-[#0B618F] mb-6">
-              {{ feature.title }}
-            </h3>
-            <p class="text-[#696F6E] text-base mb-6">
-              {{ feature.description }}
-            </p>
-            <img
-              :src="feature.image"
-              alt="feature icon"
-              class="w-[237.41px] h-[168.5px] mt-auto mx-auto object-contain object-bottom block"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="py-16 bg-[#F1FAF3]">
-        <div class="container mx-auto px-8">
-          <!-- Heading -->
-          <div class="text-center mb-12 px-4">
-            <h2
-              class="text-4xl md:text-6xl font-bold text-[#171918] max-w-2xl mx-auto"
-            >
-              Trusted by Global Brands Across Africa
-            </h2>
-          </div>
-
-          <!-- Map Placeholder -->
-          <div
-            class="max-w-5xl mx-auto bg-black rounded-full overflow-hidden p-6 _flex justify-center hidden"
-          >
-            <img
-              src="@/assets/images/globe.png"
-              alt="Africa Map Placeholder"
-              class="w-full object-cover rounded-[32px]"
-            />
-          </div>
-
-          <div
-            class="grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] [&>img]:justify-self-center gap-10 mt-16 mb-28"
-          >
-            <img src="../assets/images/yas.png" alt="yas" />
-            <img src="../assets/images/flutterwave.png" alt="flutterwave" />
-            <img src="../assets/images/m-pesa.png" alt="m-pesa" />
-            <img src="../assets/images/tico.png" alt="tigo" />
-            <img src="../assets/images/e-wallet.png" alt="e-wallet" />
-            <img src="../assets/images/visa.png" alt="visa" />
-            <img src="../assets/images/alexpay.png" alt="alexpay" />
-            <img src="../assets/images/mastercard.png" alt="mastercard" />
-            <img src="../assets/images/redstone.png" alt="redstone" />
-          </div>
-
-          <!-- Stats Section -->
-          <div
-            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-6 text-center"
-          >
-            <div>
-              <p class="text-4xl font-bold text-[#043B56]">50+</p>
-              <p class="text-[#525857] mt-2 text-lg">
-                Businesses use our platform to<br />
-                process their transactions.
-              </p>
-            </div>
-
-            <div>
-              <p class="text-4xl font-bold text-[#043B56]">7+</p>
-              <p class="text-[#525857] text-lg mt-2">
-                Markets, including Ghana, South<br />
-                Africa, Zambia and Tanzania
-              </p>
-            </div>
-
-            <div>
-              <p class="text-4xl font-bold text-[#043B56]">4+</p>
-              <p class="text-[#525857] text-lg mt-2">
-                Payment licenses secured,<br />
-                doubling by Q1 2026.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="bg-[#011A27] text-white py-20 flex items-center justify-center"
-      >
-        <div class="container mx-auto px-8 text-center">
-          <h2
-            class="text-4xl font-bold text-white sm:text-5xl max-w-[500px] mx-auto"
-          >
-            Ready to Expand into Africa?
-          </h2>
-          <p class="mt-6 text-lg text-[#F1F7F6] max-w-[500px] mx-auto">
-            Get started with Portal by Vesicash and launch in new markets
-            quickly and compliantly.
           </p>
           <div class="mt-8">
             <a href="#" class="btn"> Get started </a>

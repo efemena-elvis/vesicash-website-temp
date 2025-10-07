@@ -8,7 +8,7 @@
     ]"
   >
     <div
-      class="container grid grid-cols-[auto_1fr_auto] gap-8 items-center mx-auto py-2 px-2 md:py-4 md:px-8"
+      class="container grid grid-cols-[auto_1fr_auto] gap-8 items-center mx-auto py-2 px-4 md:py-4 md:px-8"
     >
       <NuxtLink to="/">
         <img src="../assets/images/Logo.svg" alt="Logo" />
