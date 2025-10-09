@@ -3,8 +3,8 @@
     :class="[
       '',
       view === 'portal'
-        ? 'bg-portal border-b-2 border-[#65636340]'
-        : 'bg-linear-to-r from-white via-gray-100 to-gray-300 border-b border-[#65636340]/20',
+        ? '_bg-portal bg-linear-to-r from-white via-gray-50 to-gray-100 border-b-2 border-[#65636340]'
+        : 'bg-linear-to-r from-white via-gray-50 to-gray-100 border-b border-[#65636340]/20',
     ]"
   >
     <div

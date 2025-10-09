@@ -3,15 +3,15 @@
     <div v-if="view === 'portal'" class="animate-in slide-in-from-left-2">
       <section class="bg-gray-100 py-16 relative hero-section">
         <div
-          class="container mx-auto grid gap-10 lg:grid-cols-[1fr_1fr] items-center px-8 relative"
+          class="container mx-auto grid gap-10 lg:grid-cols-[1fr_1.35fr] items-center px-8 relative"
         >
-          <div class="space-y-5 max-w-[400px]">
+          <div class="space-y-5 max-w-[500px]">
             <h1
-              class="text-5xl md:text-7xl md:leading-[90px] font-bold text-white"
+              class="text-5xl md:text-[94px] md:leading-[108px] font-bold text-white"
             >
               Africa’s Merchant of Record Gateway
             </h1>
-            <p class="text-lg text-[#E5EDEB]/80">
+            <p class="text-lg text-[#E5EDEB]">
               Portal by Vesicash intelligently orchestrates local payments,
               compliance, and tax handling across the continent, giving you
               seamless access to every market.
@@ -29,13 +29,15 @@
       </section>
 
       <section class="py-16 bg-gradient-to-r bg-[#F1F7F6] ocrhe">
-        <div class="container px-8 grid sm:grid-cols-[1fr_1.3fr] gap-6">
+        <div class="container px-8 grid sm:grid-cols-[1fr_1.7fr] gap-6">
           <div></div>
           <div class="space-y-10 sm:py-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-[#171918]">
+            <h2
+              class="text-4xl md:text-[56px] md:leading-[72px] font-bold text-[#171918]"
+            >
               Orchestrated Payments, Built for Africa’s Complexity
             </h2>
-            <div class="space-y-3 text-[#525857]">
+            <div class="space-y-3 text-[#525857] text-lg">
               <p>
                 Portal by Vesicash intelligently routes payments across mobile
                 money, cards, and bank transfers in each market by using our
@@ -89,7 +91,7 @@
         </div>
       </section>
 
-      <section class="py-16 bg-[#F1FAF3]">
+      <section class="py-16 bg-[#EEF9FD]">
         <div class="container mx-auto px-8">
           <!-- Heading -->
           <div class="text-center mb-12 px-4">
@@ -102,7 +104,7 @@
 
           <!-- Map Placeholder -->
           <div
-            class="max-w-5xl mx-auto bg-black rounded-full overflow-hidden p-6 _flex justify-center hidden"
+            class="max-w-5xl mx-auto bg-black rounded-full overflow-hidden p-6 _flex justify-center"
           >
             <img
               src="@/assets/images/globe.png"
@@ -112,7 +114,7 @@
           </div>
 
           <div
-            class="grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] [&>img]:justify-self-center gap-10 mt-16 mb-28"
+            class="_grid hidden grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] [&>img]:justify-self-center gap-10 mt-16 mb-28"
           >
             <img src="../assets/images/yas.png" alt="yas" />
             <img src="../assets/images/flutterwave.png" alt="flutterwave" />
@@ -130,7 +132,7 @@
             class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-6 text-center"
           >
             <div>
-              <p class="text-4xl font-bold text-[#043B56]">50+</p>
+              <p class="text-5xl font-bold text-[#24ACEE]">50+</p>
               <p class="text-[#525857] mt-2 text-lg">
                 Businesses use our platform to<br />
                 process their transactions.
@@ -138,7 +140,7 @@
             </div>
 
             <div>
-              <p class="text-4xl font-bold text-[#043B56]">7+</p>
+              <p class="text-5xl font-bold text-[#24ACEE]">7+</p>
               <p class="text-[#525857] text-lg mt-2">
                 Markets, including Ghana, South<br />
                 Africa, Zambia and Tanzania
@@ -146,7 +148,7 @@
             </div>
 
             <div>
-              <p class="text-4xl font-bold text-[#043B56]">4+</p>
+              <p class="text-5xl font-bold text-[#24ACEE]">4+</p>
               <p class="text-[#525857] text-lg mt-2">
                 Payment licenses secured,<br />
                 doubling by Q1 2026.
@@ -157,15 +159,17 @@
       </section>
 
       <section
-        class="bg-[#011A27] text-white py-20 flex items-center justify-center"
+        class="bg-[#011A27] text-white py-[100px] flex items-center justify-center"
       >
         <div class="container mx-auto px-8 text-center">
           <h2
-            class="text-4xl font-bold text-white sm:text-5xl max-w-[500px] mx-auto"
+            class="text-4xl font-bold text-white sm:text-[46px] sm:leading-[60px] max-w-[500px] mx-auto"
           >
             Ready to Expand into Africa?
           </h2>
-          <p class="mt-6 text-lg text-[#F1F7F6] max-w-[500px] mx-auto">
+          <p
+            class="mt-6 text-[24px] leading-[32px] text-[#F1F7F6] max-w-[500px] mx-auto font-light"
+          >
             Get started with Portal by Vesicash and launch in new markets
             quickly and compliantly.
           </p>
@@ -241,7 +245,7 @@
           <div
             class="grid md:grid-cols-[1fr_auto] items-center gap-y-8 gap-x-2"
           >
-            <div class="space-y-6">
+            <div class="space-y-6 text-[18px] leading-[32px]">
               <p class="text-gray-600 leading-relaxed">
                 Vesicash partners with licensed financial institutions and PSPs
                 in every market we operate, thereby providing compliant,
@@ -251,8 +255,9 @@
                 We don't just offer generic rails. Our system localizes the
                 experience by detecting the buyer’s market and automatically
                 presenting the most trusted local payment methods; whether
-                that’s mobile money in Tanzania, bank transfers in Nigeria, or
-                card payments in Ghana.
+                that’s <b>mobile money in Tanzania</b>,
+                <b>bank transfers in Nigeria</b>, or
+                <b>card payments in Ghana</b>.
               </p>
               <p class="text-gray-600 leading-relaxed">
                 Through one integration, you gain access to a growing network of
@@ -263,7 +268,7 @@
             <img
               src="@/assets/images/Africa-glow.png"
               alt="Africa Payment Collage"
-              class="h-[398px] w-[458px] object-contain mx-auto block"
+              class="h-[398px] w-[558px] object-contain mx-auto block"
             />
           </div>
 
@@ -272,13 +277,14 @@
               <h1 class="text-5xl font-bold text-[#171918]">Why it Matters</h1>
             </div>
             <div
-              class="grid md:grid-cols-[repeat(auto-fill,_minmax(264px,_1fr))] gap-8"
+              class="grid md:grid-cols-[repeat(auto-fill,_minmax(270px,_1fr))] gap-8"
             >
               <div class="space-y-4">
                 <div
                   class="size-[70px] rounded-full border border-[#E5EDEB] bg-white grid place-items-center"
                 >
-                  <icon-judge class="text-4xl text-blue-400/80" />
+                  <!-- <icon-judge class="text-4xl text-blue-400/80" /> -->
+                  <img src="../assets/images/judge.svg" alt="" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -295,7 +301,8 @@
                 <div
                   class="size-[70px] rounded-full border border-[#E5EDEB] grid place-items-center"
                 >
-                  <icon-arrows class="text-4xl" />
+                  <!-- <icon-arrows class="text-4xl" /> -->
+                  <img src="../assets/images/arrows.svg" alt="" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -312,7 +319,8 @@
                 <div
                   class="size-[70px] rounded-full border border-[#E5EDEB] grid place-items-center"
                 >
-                  <icon-globe class="text-4xl text-blue-500/30" />
+                  <!-- <icon-globe class="text-4xl text-blue-500/30" /> -->
+                  <img src="../assets/images/globe.svg" alt="" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -533,7 +541,7 @@
         </div>
       </section>
       <section
-        class="bg-[#011A27] text-white py-20 flex items-center justify-center"
+        class="bg-[#011A27] text-white py-[100px] flex items-center justify-center"
       >
         <div class="container mx-auto px-8 text-center">
           <h2
