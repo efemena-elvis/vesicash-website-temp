@@ -3,7 +3,7 @@
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-8">
       <div class="flex flex-col space-y-4">
         <img
-          src="../assets/images/Logo.svg"
+          src="../assets/images/Logo.png"
           alt="Logo"
           class="h-auto w-[175px] object-left object-cover"
         />

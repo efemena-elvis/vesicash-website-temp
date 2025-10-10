@@ -284,7 +284,7 @@
                   class="size-[70px] rounded-full border border-[#E5EDEB] bg-white grid place-items-center"
                 >
                   <!-- <icon-judge class="text-4xl text-blue-400/80" /> -->
-                  <img src="../assets/images/judge.svg" alt="" />
+                  <img src="../assets/images/judge.png" alt="" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -302,7 +302,7 @@
                   class="size-[70px] rounded-full border border-[#E5EDEB] grid place-items-center"
                 >
                   <!-- <icon-arrows class="text-4xl" /> -->
-                  <img src="../assets/images/arrows.svg" alt="" />
+                  <img src="../assets/images/arrows.png" alt="" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
@@ -320,7 +320,7 @@
                   class="size-[70px] rounded-full border border-[#E5EDEB] grid place-items-center"
                 >
                   <!-- <icon-globe class="text-4xl text-blue-500/30" /> -->
-                  <img src="../assets/images/globe.svg" alt="" />
+                  <img src="../assets/images/globe-icon.png" alt="" />
                 </div>
                 <div class="space-y-2">
                   <h3 class="text-xl text-[#171918] font-semibold">
