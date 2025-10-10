@@ -604,7 +604,6 @@ const features = [
   },
 ];
 
-const brands = ["yas"];
 const store = useAppState();
 const view = computed(() => store.appState);
 </script>
@@ -628,5 +627,11 @@ const view = computed(() => store.appState);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .ocrhe {
+    background-image: none;
+  }
 }
 </style>

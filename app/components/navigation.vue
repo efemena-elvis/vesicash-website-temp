@@ -16,8 +16,8 @@
       <div>
         <div
           :class="[
-            'p-1.5 md:p-2 text-sm md:text-base inline-flex gap-1 rounded-full',
-            view === 'payment' ? 'bg-[#EAEEF0]' : 'bg-blue-400/90',
+            'p-1.5 md:p-2 text-sm md:text-base inline-flex gap-1 rounded-full border border-gray-300',
+            view === 'payment' ? '_bg-[#EAEEF0]' : '_bg-blue-400/90',
           ]"
         >
           <div
