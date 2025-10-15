@@ -9,11 +9,11 @@
             <h1
               class="text-5xl md:text-[94px] md:leading-[108px] font-bold text-white"
             >
-              Africa’s Merchant of Record Gateway
+              Merchant of Record for Global Businesses
             </h1>
             <p class="text-lg text-[#E5EDEB]">
-              Portal by Vesicash intelligently orchestrates local payments,
-              compliance, and tax handling across the continent, giving you
+              Portal by Vesicash intelligently streamlines local payments,
+              compliance, and tax operations across the continent, giving you
               seamless access to every market.
             </p>
             <button class="btn">Get Started</button>
@@ -132,7 +132,7 @@
             class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-6 text-center"
           >
             <div>
-              <p class="text-5xl font-bold text-[#24ACEE]">50+</p>
+              <p class="text-5xl font-bold text-[#24ACEE]">000’s</p>
               <p class="text-[#525857] mt-2 text-lg">
                 Businesses use our platform to<br />
                 process their transactions.
@@ -150,8 +150,7 @@
             <div>
               <p class="text-5xl font-bold text-[#24ACEE]">4+</p>
               <p class="text-[#525857] text-lg mt-2">
-                Payment licenses secured,<br />
-                doubling by Q1 2026.
+                Payment methods for local and global collection
               </p>
             </div>
           </div>
@@ -262,7 +261,7 @@
               <p class="text-gray-600 leading-relaxed">
                 Through one integration, you gain access to a growing network of
                 regulated local rails, ensuring every collection or payout is
-                fast, secure, and aligned with local rules.
+                fast, secure, and aligned with local compliance.
               </p>
             </div>
             <img
@@ -598,8 +597,7 @@ const features = [
   },
   {
     title: "Localized Collections",
-    description:
-      "Collect funds and transact your business in the local currency.",
+    description: "Local collections, multi-currency payout.",
     image: currencies,
   },
 ];
