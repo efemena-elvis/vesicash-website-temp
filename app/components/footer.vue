@@ -3,9 +3,9 @@
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-8">
       <div class="flex flex-col space-y-4">
         <img
-          src="../assets/images/Logo.png"
+          src="../assets/images/brand.png"
           alt="Logo"
-          class="h-auto w-[175px] object-left object-cover"
+          class="w-32 h-12 object-contain"
         />
         <div class="text-base space-y-2 [&_>a]:block my-6">
           <a href="mailto:support@vesicash.com" class="hover:underline"

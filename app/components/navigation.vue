@@ -11,7 +11,11 @@
       class="container grid grid-cols-[auto_1fr_auto] gap-8 items-center mx-auto py-2 px-4 md:py-4 md:px-8"
     >
       <NuxtLink to="/">
-        <img src="../assets/images/Logo.png" alt="Brand-Logo" />
+        <img
+          src="../assets/images/Vector.png"
+          class="w-32 h-12 object-contain"
+          alt="Brand-Logo"
+        />
       </NuxtLink>
       <div>
         <div
