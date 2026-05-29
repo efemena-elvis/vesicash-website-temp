@@ -12,7 +12,7 @@
     >
       <NuxtLink to="/">
         <img
-          src="../assets/images/Vector.png"
+          src="../assets/images/Logo.png"
           class="w-32 h-12 object-contain"
           alt="Brand-Logo"
         />
